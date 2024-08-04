@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #0000001a;
+    border-radius: 8px;
+}
+
+.titulo {
+    text-align: center;
+    color: #333;
+    padding-bottom: 30px;
+    font-size: 28px;
+}
+
+.conversor {
+    margin: 20px 0;
+}
+
+.formulario-conversao {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+.form-group input[type="number"],
+.form-group input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+button.btn {
+    background-color: #87CEFA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.resultado {
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.resultado-group p {
+    padding: 10px 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 22px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input[type="number"],
+    .form-group input[type="text"] {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    button.btn {
+        margin-top: 10px;
+    }
+
+    .resultado h3 {
+        font-size: 16px;
+    }
+
+    .resultado-group p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 16px;
+    }
+
+    .resultado h3 {
+        font-size: 14px;
+    }
+
+    .resultado-group p {
+        font-size: 14px;
+    }
+}
