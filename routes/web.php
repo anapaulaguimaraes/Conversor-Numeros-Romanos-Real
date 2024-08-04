@@ -1,7 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ConversorController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('conversor');
 });
+
+Route::post('/converte-romano', [ConversorController::class, 'converteRomano']);
+Route::post('/converte-real', [ConversorController::class, 'converteReal']);
